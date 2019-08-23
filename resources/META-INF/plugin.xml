@@ -1,0 +1,39 @@
+<idea-plugin>
+    <id>org.encryfoundation.prismIdeaPlugin</id>
+    <name>PrismSupport</name>
+    <version>0.1</version>
+    <vendor email="info@encry.com" url="http://encry.com">Encry</vendor>
+
+    <description><![CDATA[
+      Plugin for support prism language.<br>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="190.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>org.intellij.scala</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileTypeFactory implementation="org.encryfoundation.prismIdeaPlugin.PrismFileTypeFactory"/>
+
+        <!--project wizard-->
+        <!--<moduleBuilder builderClass="org.encryfoundation.prismSupport.project.PrismModuleBuilder" id="PRISM_STEP"-->
+        <!--order="first"/>-->
+        <!--<moduleType id="PRISM_MODULE" implementationClass="org.encryfoundation.prismSupport.project.PrismModuleType"/>-->
+        <!--<sdkType implementation="org.encryfoundation.prismSupport.sdk.PrismSdkType"/>-->
+
+
+        <!--<configurationType implementation="org.encryfoundation.prismSupport.run.PrismRunConfigurationType"/>-->
+        <!--<programRunner implementation="org.encryfoundation.prismSupport.run.PrismRunner"/>-->
+
+        <!--<moduleConfigurationEditorProvider implementation="org.encryfoundation.prismSupport.settings.PrismModuleConfigurationEditor" order="first"/>-->
+
+        <!--run configuration -->
+    </extensions>
+
+
+    <actions>
+    </actions>
+</idea-plugin>
